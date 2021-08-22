@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./assets/style.css">
+<title>Weather</title>
+</head>
+<body>
+    <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:#6380cf ;color: white;">
+        <h1><strong>Weather Dashboard</strong></h1>
+    </div>
+    <div>
+        <div>
+            <aside>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-3 dflex">
+                            <h2>Search your city</h2>
+                            <form id="search-form">
+                                <div class="form-inline form-group w-100">
+                                    <div class="input-group col-10 p-0">
+                                        <input type="text" id="search-input">
+                                        <div>
+                                            <button type="Submit" class="btn btn-primary search-button" id="search-button">Search</button>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 list-group"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="history"></div>
+                <div class="col-9">
+                    <div class="mt-3 card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4"><span id="currentCity" ></span></h3>
+                            <p class="card-text">Temperature: <span id="current-temp" ></span> &#8457</p>
+                            <p class="card-text">Humidity: <span id="humid" ></span>%</p>
+                            <p class="card-text">Wind Speed: <span id="wind-mph" ></span> MPH</p>
+                            <p class="card-text">UV Index: <span id="current-uv" ></span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2"></div>
+                        <h2>5-Day forecast</h2>
+                        <section class="row m-2 justify-content-around text-light" id="forecast">
+                            <div class="card col-2 bg-dark">
+                                <h3 class="card-title">Date</h3>
+                                <i class="fa fa-cloud"></i>
+                                <p class="card-text">Temp</p>
+                                <p class="card-text">Humidity</p>
+                            </div>
+                            <div class="card col-2 bg-dark">
+                                <h3 class="card-title">Date</h3>
+                                <i class="fa fa-cloud"></i>
+                                <p class="card-text">Temp</p>
+                                <p class="card-text">Humidity</p>
+                            </div>
+                            <div class="card col-2 bg-dark">
+                                <h3 class="card-title">Date</h3>
+                                <i class="fa fa-cloud"></i>
+                                <p class="card-text">Temp</p>
+                                <p class="card-text">Humidity</p>
+                            </div>
+                            <div class="card col-2 bg-dark">
+                                <h3 class="card-title">Date</h3>
+                                <i class="fa fa-cloud"></i>
+                                <p class="card-text">Temp</p>
+                                <p class="card-text">Humidity</p>
+                            </div>
+                            <div class="card col-2 bg-dark">
+                                <h3 class="card-title">Date</h3>
+                                <i class="fa fa-cloud"></i>
+                                <p class="card-text">Temp</p>
+                                <p class="card-text">Humidity</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </aside>
+            <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="./assets/script.js"></script>
+</body>
+</html>
